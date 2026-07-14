@@ -1,3 +1,5 @@
 {
+  "buildCommand": "cd .. && npm run build:rider",
+  "outputDirectory": "dist",
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

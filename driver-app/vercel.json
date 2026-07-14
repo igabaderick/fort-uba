@@ -1,3 +1,5 @@
 {
+  "buildCommand": "cd .. && npm run build:driver",
+  "outputDirectory": "dist",
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

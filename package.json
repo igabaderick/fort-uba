@@ -1,0 +1,9 @@
+{
+  "name": "fort-uba",
+  "private": true,
+  "scripts": {
+    "build:rider":  "npm install --prefix rider-app  && npm run build --prefix rider-app",
+    "build:driver": "npm install --prefix driver-app && npm run build --prefix driver-app",
+    "build:admin":  "npm install --prefix admin-dashboard && npm run build --prefix admin-dashboard"
+  }
+}

@@ -1,3 +1,5 @@
 {
+  "buildCommand": "cd .. && npm run build:admin",
+  "outputDirectory": "dist",
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
