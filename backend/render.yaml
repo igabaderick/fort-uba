@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: fort-uba-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: USE_REAL_SMS
+        value: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: fort-uba-db
+          property: connectionString
+
+databases:
+  - name: fort-uba-db
+    databaseName: fortuba
+    user: fortuba
