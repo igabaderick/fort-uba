@@ -7,7 +7,7 @@ export default defineConfig({
   server: { port: 5175 },
   resolve: {
     alias: {
-      "../../shared": resolve(__dirname, "../shared"),
+      "../../shared": resolve(__dirname, "src/shared"),
     },
   },
 });

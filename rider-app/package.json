@@ -5,6 +5,7 @@
   "description": "FORT UBA rider app — wired to real backend",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node ../copy-shared.js",
     "build": "vite build",
     "preview": "vite preview"
   },
